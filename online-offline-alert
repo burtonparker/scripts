@@ -1,0 +1,4 @@
+// Basic Mac terminal script to determine if we are online, or offline, in 30 second intervals, since Knology sucks balls.
+// Original code: http://www.commandlinefu.com/commands/view/1815/beep-when-a-server-goes-offline
+
+while true; do ping -c1 -W1 google.com &>/dev/null && { say " ";} || { say "this is bullshit"; } ; sleep 30; done
